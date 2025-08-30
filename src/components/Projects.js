@@ -2,39 +2,39 @@ export default function Projects() {
   const projects = [
     {
       title: "🎵 Music Player",
-      img: process.env.PUBLIC_URL + "/images/music.png",
+      img: "/images/music.png",
       github: "https://github.com/Denny-16/Music_player",
-      desc: "Spotify-inspired music player."
+      desc: "Spotify-inspired music player.",
     },
     {
       title: "📈 Stock Market Portfolio",
-      img: process.env.PUBLIC_URL + "/images/stock.png",
+      img: "/images/stock.png",
       github: "https://github.com/Denny-16/StockMarketPortFolio",
-      desc: "Track investments & charts."
+      desc: "Track investments & charts.",
     },
     {
       title: "📊 DSA Visualizer",
-      img: process.env.PUBLIC_URL + "/images/dsa.png",
+      img: "/images/dsa.png",
       github: "https://github.com/Denny-16/Dsa_visualizer",
-      desc: "DSA visualization + AI."
+      desc: "DSA visualization + AI.",
     },
     {
       title: "💧 Smart Water Management",
-      img: process.env.PUBLIC_URL + "/images/water.png",
+      img: "/images/water.png",
       github: "https://github.com/Denny-16/SmartWaterManagement",
-      desc: "IoT water system."
+      desc: "IoT water system.",
     },
     {
       title: "⚛ Quantum Portfolio",
-      img: process.env.PUBLIC_URL + "/images/quantum.png",
+      img: "/images/quantum.png",
       github: "https://github.com/Denny-16/quantum-portfolio-fronten",
-      desc: "Quantum-powered optimizer."
+      desc: "Quantum-powered optimizer.",
     },
     {
       title: "🤝 Code & Connect",
-      img: process.env.PUBLIC_URL + "/images/codeconnect.png",
+      img: "/images/codeconnect.png",
       github: "https://github.com/Denny-16/code-Connect",
-      desc: "Coding + collaboration."
+      desc: "Coding + collaboration.",
     },
   ];
 
