@@ -1,52 +1,64 @@
+import musicImg from "url:../assets/images/music.png";
+import stockImg from "url:../assets/images/stock.png";
+import dsaImg from "url:../assets/images/dsa.png";
+import waterImg from "url:../assets/images/water.png";
+import quantumImg from "url:../assets/images/quantum.png";
+import codeconnectImg from "url:../assets/images/codeconnect.png";
+import swiggyImg from "url:../assets/images/swiggy.png"; // 👈 Swiggy image
+
 export default function Projects() {
   const projects = [
     {
+      title: "🍔 Swiggy Clone",
+      img: swiggyImg,
+      github: "https://github.com/Denny-16/Swiggy_clone",
+      desc: "React + Tailwind app with restaurant listings, filters, and cart system.",
+    },
+    {
       title: "🎵 Music Player",
-      img: "/images/music.png",
+      img: musicImg,
       github: "https://github.com/Denny-16/Music_player",
       desc: "Spotify-inspired music player.",
     },
-    {
-      title: "📈 Stock Market Portfolio",
-      img: "/images/stock.png",
-      github: "https://github.com/Denny-16/StockMarketPortFolio",
-      desc: "Track investments & charts.",
+     {
+      title: "🤝 Code & Connect",
+      img: codeconnectImg,
+      github: "https://github.com/Denny-16/code-Connect",
+      desc: "Coding + real-time collaboration.",
     },
+    
     {
       title: "📊 DSA Visualizer",
-      img: "/images/dsa.png",
+      img: dsaImg,
       github: "https://github.com/Denny-16/Dsa_visualizer",
       desc: "DSA visualization + AI.",
     },
     {
       title: "💧 Smart Water Management",
-      img: "/images/water.png",
+      img: waterImg,
       github: "https://github.com/Denny-16/SmartWaterManagement",
       desc: "IoT water system.",
     },
     {
       title: "⚛ Quantum Portfolio",
-      img: "/images/quantum.png",
+      img: quantumImg,
       github: "https://github.com/Denny-16/quantum-portfolio-fronten",
       desc: "Quantum-powered optimizer.",
     },
-    {
-      title: "🤝 Code & Connect",
-      img: "/images/codeconnect.png",
-      github: "https://github.com/Denny-16/code-Connect",
-      desc: "Coding + collaboration.",
+     {
+      title: "📈 Stock Market Portfolio",
+      img: stockImg,
+      github: "https://github.com/Denny-16/StockMarketPortFolio",
+      desc: "Track investments & charts.",
     },
   ];
 
   return (
-    <div className="py-20 bg-white text-center px-6">
+    <section id="projects" className="py-20 bg-white text-center px-6">
       <h2 className="text-3xl font-bold text-gray-800 mb-10">Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((p, i) => (
-          <div
-            key={i}
-            className="bg-gray-50 rounded-lg shadow hover:shadow-xl transition overflow-hidden"
-          >
+          <div key={i} className="bg-gray-50 rounded-lg shadow hover:shadow-xl transition overflow-hidden">
             <img src={p.img} alt={p.title} className="w-full h-48 object-cover" />
             <div className="p-6 text-left">
               <h3 className="text-xl font-semibold">{p.title}</h3>
@@ -63,6 +75,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
